@@ -1,5 +1,7 @@
 # FootBallNew
 后续会持续更新
-计划写一个MVP+RETROFIT2.0+RXJAVA2.0
-目前模仿着MVP谷歌demo，来做了一个MVP的架构
-使用契约类Contract来统一管理view与presenter的所有的接口，这种方式使得view与presenter中有哪些功能，一目了然，维护起来也很方便
+
+计划写一个MVP+RETROFIT2.0+RXJAVA2.0 开源练手总结学习DEMO项目
+接口用网上开源或者抓包工具抓来的接口，
+
+# 2019-07-16 base基类+retrofit的部分封装
