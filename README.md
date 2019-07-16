@@ -1,0 +1,5 @@
+# FootBallNew
+后续会持续更新
+计划写一个MVP+RETROFIT2.0+RXJAVA2.0
+目前模仿着MVP谷歌demo，来做了一个MVP的架构
+使用契约类Contract来统一管理view与presenter的所有的接口，这种方式使得view与presenter中有哪些功能，一目了然，维护起来也很方便
