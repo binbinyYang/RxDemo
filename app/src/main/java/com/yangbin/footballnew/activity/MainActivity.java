@@ -2,6 +2,7 @@ package com.yangbin.footballnew.activity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.yangbin.footballnew.R;
 import com.yangbin.footballnew.base.BaseActivity;
@@ -17,23 +18,15 @@ import io.reactivex.schedulers.Schedulers;
 
 
 public class MainActivity extends BaseActivity {
-
-
-
-
-
-
     String TAG="MainActivity";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-
         Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(ObservableEmitter<String> emitter) throws Exception {
+                emitter.onNext("准备开始");
                 emitter.onNext("连载1");
                 emitter.onNext("连载2");
                 emitter.onNext("连载3");
@@ -51,6 +44,7 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public void onNext(String value) {
                         Log.e(TAG,"onNext:"+value);
+                        Toast.makeText(MainActivity.this, value, Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
